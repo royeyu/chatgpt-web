@@ -481,7 +481,11 @@ onUnmounted(() => {
           <template v-if="!dataSources.length">
             <div class="flex items-center justify-center mt-4 text-center text-neutral-300">
               <SvgIcon icon="ri:bubble-chart-fill" class="mr-2 text-3xl" />
-              <span>Aha~</span>
+              <span>欢迎使用ChatGPT3.5</span>
+            </div>
+            <div class="flex items-center justify-center mt-4 text-center text-neutral-300">
+              <SvgIcon icon="ri:bubble-chart-fill" class="mr-2 text-3xl" />
+              <span>ChatGPT3.5使用了更大的模型容量、更高的生成准确性和一致性以及更快的训练速度。</span>
             </div>
           </template>
           <template v-else>

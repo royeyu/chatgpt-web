@@ -8,8 +8,17 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/',
     name: 'Root',
+    redirect: '/home',
+  },
+  {
+    path: '/home',
+    name: 'Home',
+    component: () => import('@/views/home/index.vue'),
+  },
+  {
+    path: '/chat',
+    name: 'Chats',
     component: ChatLayout,
-    redirect: '/chat',
     children: [
       {
         path: '/chat/:uuid?',
@@ -18,7 +27,6 @@ const routes: RouteRecordRaw[] = [
       },
     ],
   },
-
   {
     path: '/404',
     name: '404',
